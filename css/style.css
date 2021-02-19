@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
+* { 
+  margin: 0px;
+  padding: 0px;
+}
 html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', 'sans-serif';
     color: #222;
 }
+.menu-bar {
+  background-image: linear-gradient(-90deg, slateblue,  mintcream);
+}
 navbar {
     min-height: 25px !important;
 }
-.navbar-nav > li > a, .navbar-brand {
+.navbar-nav > li > a, .navbar-brand{
     padding-right: 20px;
     padding-top: 0px !important; 
     padding-bottom: 0px !important;
