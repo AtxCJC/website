@@ -1,47 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-* { 
-  margin: 0px;
-  padding: 0px;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', 'sans-serif';
     color: #222;
+    background-color: aliceblue;
 }
-.menu-bar {
-  background-image: linear-gradient(-90deg, slateblue,  mintcream);
+.navbar{
+    border-bottom: 3px solid #000;
 }
-navbar {
-    min-height: 25px !important;
-}
-.navbar-nav > li > a, .navbar-brand{
-    padding-right: 20px;
-    padding-top: 0px !important; 
-    padding-bottom: 0px !important;
-}
-.navbar-toggle {
-    padding: 0 0;
-    margin-top: 7px;
-    margin-bottom: 0;
-}
-.nav-link {
-    font-size: 1.1em !important;
+.navbar-nav li{
+    padding-left: 30px;
+    font-size: 1.15em !important;
 }
 .carousel-item img {
     height: 100%;
     width: 100%;
 }
 .carousel-caption h1 {
-    font-size: 500%;
+    font-size: 300%;
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 .carousel-caption h3 {
     font-size: 200%;
     font-weight: 500;
-    text-shadow: 1px 1px 10px #000;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 15px;
 }
+.carousel-caption button {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    color: lightgoldenrodyellow;
+}
+.card-img-top {
+    border-style: solid;
+    border-color: lightyellow;
+}
+.my-4{
+    font-weight: 250;
+    text-shadow: 1px 1px 1px lightgoldenrodyellow,
+                1px 1px 2px black;
+    color: black;
+    text-decoration: underline;
+} 
+.col-lg p{
+    letter-spacing: 1px;
+}
+.col-lg p > strong{
+    text-shadow: 1px 1px 2px black;
+    color: lightyellow;
+}
+
+
 
 
 
@@ -64,48 +79,6 @@ navbar {
   
 }
 
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
 
 
 
