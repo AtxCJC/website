@@ -8,10 +8,12 @@ html, body {
     width: 100%;
     font-family: 'Poppins', 'sans-serif';
     color: #222;
-    background-color: aliceblue;
+    background-color: white;
+    scroll-behavior: smooth;
 }
-.navbar{
-    border-bottom: 3px solid #000;
+.navbar{ 
+    border-bottom: 5px groove #000;
+    background-color: white;
 }
 .navbar-nav li{
     padding-left: 30px;
@@ -37,23 +39,26 @@ html, body {
     text-shadow: 1px 1px 2px black;
     color: lightgoldenrodyellow;
 }
-.card-img-top {
-    border-style: solid;
-    border-color: lightyellow;
+.navbar-nav i{
+    padding-right: 5px;
 }
+
+/*blog.html*/
 .my-4{
     font-weight: 250;
-    text-shadow: 1px 1px 1px lightgoldenrodyellow,
-                1px 1px 2px black;
+    font-family: monospace; 
     color: black;
-    text-decoration: underline;
+    text-decoration: 3px underline gray;
 } 
-.col-lg p{
-    letter-spacing: 1px;
+.col-lg{
+    font-family: monospace;
+}
+.col-lg em {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px darkgray;
 }
 .col-lg p > strong{
-    text-shadow: 1px 1px 2px black;
-    color: lightyellow;
+    color: gray;
 }
 
 
