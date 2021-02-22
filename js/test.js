@@ -10,7 +10,3 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
-var i = 0;
-var txt = document.getElementsByClassName("carousel-caption")
-var speed = 50; /* The speed/duration of the effect in milliseconds */
-

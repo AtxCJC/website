@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
-    <link rel="icon" href="img/logos/dragon.png">
-
+    <!-- <link rel="icon" href="img/logos/dragon.png"> -->
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -20,7 +20,8 @@
 <nav class="navbar navbar-expand-md navbar-light">
     <!--navbar icon-->
     <a class="navbar-brand" href="index.html">
-        <img src="img/logos/Screenshot 2021-02-21 095739.png" style="width: 35%"></a>
+        <img src="img/logos/Screenshot 2021-02-21 095739.png">
+    </a>
     <!--navbar toggle button-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -28,13 +29,13 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html"><i class="fas fa-dungeon"></i>Home</a>
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="blog.html"><i class="fas fa-book"></i>Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about-me.html"><i class="fas fa-user-circle"></i>About Me</a>
+                <a class="nav-link" href="about-me.html"><i class="fas fa-user"></i>About Me</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html"><i class="fas fa-globe"></i>Contact</a>
@@ -55,8 +56,8 @@
     <div class="carousel-item active">
         <img src="img/backgrounds/its-a-wonderful-life-bar.jpg">
         <div class="carousel-caption">
-            <h1 class="display-2">Featured Blog</h1>
-            <h3>Prosperity</h3>
+            <h1 class="featured">Featured Blog</h1>
+            <h3 id="featured-name">Prosperity</h3>
             <button type="button" href="blog.html" class="btn btn-outline-light btn-lg">Read</button>
         </div>
     </div>
@@ -144,10 +145,10 @@
         <h2>Connect</h2>
     </div>
     <div class="col-12 social padding">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+        <a href="#"><i class="fas fa-envelope-square"></i></a>
     </div>
 </div>
 <hr>
@@ -168,7 +169,7 @@
 </div>
 </footer>
 
-
+    <script src="js/dom.js"></script>
 </body>
 </html>
 

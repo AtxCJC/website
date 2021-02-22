@@ -12,16 +12,26 @@ html, body {
     scroll-behavior: smooth;
 }
 .navbar{ 
-    border-bottom: 5px groove #000;
+    border-bottom: 5px ridge #000;
     background-color: white;
 }
-.navbar-nav li{
-    padding-left: 30px;
-    font-size: 1.15em !important;
+.navbar-nav li, a, i{
+    font-size: 1.07em !important;
+    display: inline-block;
+    padding-right: 5px;
+    line-height: 1;
+}
+.nav-item a:hover{
+    color: black !important;
+    transition: .4s ease-in-out;
+}
+.navbar-brand img{
+    width: 37%;
 }
 .carousel-item img {
     height: 100%;
     width: 100%;
+    border-bottom: 5px groove #000;
 }
 .carousel-caption h1 {
     font-size: 300%;
@@ -39,9 +49,7 @@ html, body {
     text-shadow: 1px 1px 2px black;
     color: lightgoldenrodyellow;
 }
-.navbar-nav i{
-    padding-right: 5px;
-}
+
 
 /*blog.html*/
 .my-4{
